@@ -1,0 +1,2 @@
+floatingip_path: /etc/network/interfaces.d
+floatingip_devices: []

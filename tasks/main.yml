@@ -1,0 +1,19 @@
+- name: write config
+  notify:
+    - restart networking
+  with_items: '{{ floatingip_devices }}'
+  template:
+    src: config.j2
+    dest: '{{ floatingip_path }}/{{ item.config }}'
+    mode: u=rw,g=r,o=r
+  tags:
+    - floatingip
+
+- name: delete config
+  notify:
+    - restart networking
+  with_items: '{{ floatingip_devices }}'
+  when: item.state == "absent"
+  file:
+    path: '{{ floatingip_path }}/{{ item.config }}'
+    state: absent

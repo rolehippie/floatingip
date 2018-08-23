@@ -1,0 +1,4 @@
+auto {{ item.device }}
+iface {{ item.device }} inet static
+  address {{ item.address }}
+  netmask {{ item.netmask | default(32) }}
