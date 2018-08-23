@@ -13,7 +13,7 @@
   notify:
     - restart networking
   with_items: '{{ floatingip_devices }}'
-  when: item.state == "absent"
+  when: item.state is defined and item.state == "absent"
   file:
     path: '{{ floatingip_path }}/{{ item.config }}'
     state: absent
