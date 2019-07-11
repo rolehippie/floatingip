@@ -1,5 +1,7 @@
 floatingip_path: /etc/network/interfaces.d
 floatingip_devices: []
+
+# Example
 # floatingip_devices:
 #   - config: 90-myinterface.cfg
 #     device: "{{ ansible_default_ipv4.interface }}:1"

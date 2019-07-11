@@ -2,6 +2,8 @@
   notify:
     - restart networking
   loop: '{{ floatingip_devices }}'
+  loop_control:
+    label: '{{ item.address }}'
   template:
     src: config.j2
     dest: '{{ floatingip_path }}/{{ item.config }}'
@@ -13,6 +15,8 @@
   notify:
     - restart networking
   loop: '{{ floatingip_devices }}'
+  loop_control:
+    label: '{{ item.address }}'
   when: item.state is defined and item.state == "absent"
   file:
     path: '{{ floatingip_path }}/{{ item.config }}'
