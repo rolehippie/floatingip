@@ -1,9 +1,16 @@
+# Standards: 0.1
+---
+# @var floatingip_path:description: Path to interface device definitions
 floatingip_path: /etc/network/interfaces.d
-floatingip_devices: []
 
-# Example
+# @var floatingip_devices:description: Definition of floating ip devices
+# @var floatingip_devices:example: >
 # floatingip_devices:
 #   - config: 90-myinterface.cfg
-#     device: "{{ ansible_default_ipv4.interface }}:1"
-#     address: "1.2.3.4"
-#     netmask: "255.255.255.255"
+#     device: '{{ ansible_default_ipv4.interface }}:1'
+#     address: 1.2.3.4
+#     netmask: 255.255.255.255
+# @end
+floatingip_devices: []
+
+...

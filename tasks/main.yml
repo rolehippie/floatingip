@@ -1,6 +1,8 @@
-- name: write config
+# Standards: 0.1
+---
+- name: Write interface config
   notify:
-    - restart networking
+    - Restart networking
   loop: '{{ floatingip_devices }}'
   loop_control:
     label: '{{ item.address }}'
@@ -11,13 +13,15 @@
   tags:
     - floatingip
 
-- name: delete config
+- name: Delete interface config
   notify:
-    - restart networking
+    - Restart networking
   loop: '{{ floatingip_devices }}'
   loop_control:
     label: '{{ item.address }}'
-  when: item.state is defined and item.state == "absent"
+  when: item.state | default("present") == "absent"
   file:
     path: '{{ floatingip_path }}/{{ item.config }}'
     state: absent
+
+...
