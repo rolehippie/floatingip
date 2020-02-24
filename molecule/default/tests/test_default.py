@@ -7,7 +7,7 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 ).get_hosts('all')
 
 
-def test_interface_config_file(host):
+def test_config_file(host):
     file = host.file("/etc/network/interfaces.d/90-myinterface.cfg")
     assert file.exists
     assert file.contains("10.13.37.1")
