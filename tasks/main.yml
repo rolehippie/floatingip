@@ -1,5 +1,14 @@
 # Standards: 1.2
 ---
+- name: Install required packages
+  loop:
+    - ifupdown
+  package:
+    name: "{{ item }}"
+    state: present
+  tags:
+    - floatingip
+
 - name: Write interface config
   notify:
     - Restart networking
