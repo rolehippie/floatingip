@@ -9,6 +9,6 @@
         address: 10.13.37.1
         netmask: 255.255.255.0
   roles:
-    - role: floatingip
+    - role: rolehippie.floatingip
 
 ...
