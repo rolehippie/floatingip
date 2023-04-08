@@ -7,7 +7,7 @@
 # [![Readme Workflow](https://github.com/rolehippie/floatingip/actions/workflows/readme.yml/badge.svg)](https://github.com/rolehippie/floatingip/actions/workflows/readme.yml)
 # [![Galaxy Workflow](https://github.com/rolehippie/floatingip/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/floatingip/actions/workflows/galaxy.yml)
 # [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/floatingip)](https://github.com/rolehippie/floatingip/blob/master/LICENSE)
-# [![Ansible Role](https://img.shields.io/ansible/role/51461)](https://galaxy.ansible.com/rolehippie/floatingip)
+# [![Ansible Role](https://img.shields.io/badge/role-rolehippie.floatingip-blue)](https://galaxy.ansible.com/rolehippie/floatingip)
 #
 # Ansible role to configure additional IPs for ifup.
 #
