@@ -1,9 +1,8 @@
-# Standards: 1.2
 ---
 - name: Install required packages
   loop:
     - ifupdown
-  package:
+  ansible.builtin.package:
     name: "{{ item }}"
     state: present
   tags:
@@ -15,7 +14,7 @@
   loop: "{{ floatingip_devices }}"
   loop_control:
     label: "{{ item.address }}"
-  template:
+  ansible.builtin.template:
     src: config.j2
     dest: "{{ floatingip_path }}/{{ item.config }}"
     mode: u=rw,g=r,o=r
@@ -29,7 +28,7 @@
   loop_control:
     label: "{{ item.address }}"
   when: item.state | default("present") == "absent"
-  file:
+  ansible.builtin.file:
     path: "{{ floatingip_path }}/{{ item.config }}"
     state: absent
 
