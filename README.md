@@ -1,4 +1,4 @@
-# floatingip
+# workspace
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/floatingip)
 [![General Workflow](https://github.com/rolehippie/floatingip/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/floatingip/actions/workflows/general.yml)
@@ -65,7 +65,6 @@ floatingip_path: /etc/network/interfaces.d
 ## Discovered Tags
 
 **_floatingip_**
-
 
 ## Dependencies
 
