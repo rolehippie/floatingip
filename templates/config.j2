@@ -1,4 +1,4 @@
 auto {{ item.device }}
 iface {{ item.device }} {{ item.type | default("inet") }} static
   address {{ item.address }}
-  {% if item.netmask | default(False) %}netmask {{ item.netmask }}{% endif %}
+  {% if item.netmask | default(false) %}netmask {{ item.netmask }}{% endif %}

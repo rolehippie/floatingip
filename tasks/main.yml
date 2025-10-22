@@ -27,9 +27,12 @@
   loop: "{{ floatingip_devices }}"
   loop_control:
     label: "{{ item.address }}"
-  when: item.state | default("present") == "absent"
+  when:
+    - false if item.state is not defined else item.state == "absent"
   ansible.builtin.file:
     path: "{{ floatingip_path }}/{{ item.config }}"
     state: absent
+  tags:
+    - floatingip
 
 ...
