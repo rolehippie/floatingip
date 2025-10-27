@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/rolehippie/floatingip/compare/v2.0.0...v2.1.0) (2025-10-27)
+
+
+### Features
+
+* apply new repo structure and update linting ([87d006c](https://github.com/rolehippie/floatingip/commit/87d006ce8ecb3304ceee4672d00f8f21d2c353c5))
+
 ## [2.0.0](https://github.com/rolehippie/floatingip/compare/v1.0.0...v2.0.0) (2024-02-12)
 
 
