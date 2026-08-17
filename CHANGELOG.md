@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.4.0](https://github.com/rolehippie/floatingip/compare/v2.3.0...v2.4.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-lint to v26.8.0 ([#54](https://github.com/rolehippie/floatingip/issues/54)) ([9eacaa8](https://github.com/rolehippie/floatingip/commit/9eacaa81650c45e85f181ef11ac5f556f7ce5a35))
+* **minor:** update dependency pipx:molecule to v26.8.0 ([#55](https://github.com/rolehippie/floatingip/issues/55)) ([c107c41](https://github.com/rolehippie/floatingip/commit/c107c4102c793ed722436ded700c3a19eeaedddd))
+* **patch:** update dependency pipx:ansible-core to v2.21.3 ([#52](https://github.com/rolehippie/floatingip/issues/52)) ([84a6bc0](https://github.com/rolehippie/floatingip/commit/84a6bc056950778bdf284ae331dbc0e0177de11a))
+* **patch:** update dependency pre-commit to v4.6.2 ([#53](https://github.com/rolehippie/floatingip/issues/53)) ([e126dc8](https://github.com/rolehippie/floatingip/commit/e126dc841a6069958c4d3d7cf74ed449f2a1c2c1))
+
 ## [2.3.0](https://github.com/rolehippie/floatingip/compare/v2.2.0...v2.3.0) (2026-08-10)
 
 ### Dependencies
