@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.4.1](https://github.com/rolehippie/floatingip/compare/v2.4.0...v2.4.1) (2026-08-31)
+
+### Dependencies
+
+* **patch:** update dependency pipx:ansible-doctor to v8.4.1 ([#56](https://github.com/rolehippie/floatingip/issues/56)) ([a3f0e3d](https://github.com/rolehippie/floatingip/commit/a3f0e3df26e561c6cdb3f5ab5ba9dbe597410d73))
+
 ## [2.4.0](https://github.com/rolehippie/floatingip/compare/v2.3.0...v2.4.0) (2026-08-17)
 
 ### Dependencies
