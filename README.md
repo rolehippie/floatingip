@@ -47,7 +47,7 @@ floatingip_devices: []
 ```YAML
 floatingip_devices:
   - config: 90-myinterface.cfg
-    device: '{{ ansible_default_ipv4.interface }}:1'
+    device: '{{ ansible_facts['default_ipv4'].interface }}:1'
     address: 1.2.3.4
     netmask: 255.255.255.255
 ```
